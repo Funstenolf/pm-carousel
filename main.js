@@ -125,11 +125,14 @@ class Plugin {
 		this.nodes.wrapper.removeAttribute("style")
 
 		this.nodes.items.forEach((nodes) => {
-			nodes?.forEach((node) => {
-				node.removeAttribute("tabindex")
-				node.removeAttribute("aria-hidden")
-				node.removeAttribute("style")
-			})
+			// Items may have not been initialized yet.
+			if (Array.isArray(nodes)) {
+				nodes.forEach((node) => {
+					node.removeAttribute("tabindex")
+					node.removeAttribute("aria-hidden")
+					node.removeAttribute("style")
+				})
+			}
 		})
 
 		this.el.classList.remove(ACTIVECLASS)
