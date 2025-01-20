@@ -10,6 +10,7 @@ const DEFAULT = {
 		noStartSpace: false,
 		autoplay: 0,
 		allowIncompleteLastPage: false,
+		fullScroll: false,
 	},
 }
 
