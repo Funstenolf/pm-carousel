@@ -1,4 +1,4 @@
-const r = "data-pm-carousel", S = `${r}-paging`, w = `${r}-wrapper`, T = `${r}-overflow`, f = `${r}-item`, m = `${r}-prev`, v = `${r}-next`, p = `${r}-playstop`, y = "transform .5s ease-in-out", c = "is-active", E = {
+const r = "data-pm-carousel", S = `${r}-paging`, w = `${r}-wrapper`, T = `${r}-overflow`, f = `${r}-item`, m = `${r}-prev`, v = `${r}-next`, u = `${r}-playstop`, y = "transform .5s ease-in-out", c = "is-active", E = {
   playstop: function() {
     this.nodes.playstop && (this.nodes.playstop.hidden = !this.currentSettings.autoplay);
   },
@@ -134,7 +134,7 @@ function X() {
     paging: this.el.querySelector(`[${S}]`),
     prev: this.el.querySelector(`[${m}]`),
     next: this.el.querySelector(`[${v}]`),
-    playstop: this.el.querySelector(`[${p}]`),
+    playstop: this.el.querySelector(`[${u}]`),
     overflow: this.el.querySelector(`[${T}]`),
     wrapper: this.el.querySelector(`[${w}]`),
     items: [...this.el.querySelectorAll(`[${f}]`)]
@@ -153,7 +153,7 @@ function W() {
     }
     return null;
   };
-  return this.nodes && (t.playstop = e(this.nodes.playstop, p, [
+  return this.nodes && (t.playstop = e(this.nodes.playstop, u, [
     "playLabel",
     "stopLabel"
   ]), t.prev = e(this.nodes.prev, m, [
@@ -194,13 +194,13 @@ function O(t) {
   }[t.key];
   s && (s(), t.preventDefault());
 }
-const u = {
+const p = {
   onTouchStart: null,
   onTouchMove: null,
   onTouchEnd: null
 };
 function d(t, e) {
-  u[t] && window.cancelAnimationFrame(u[t]), u[t] = window.requestAnimationFrame(e);
+  p[t] && window.cancelAnimationFrame(p[t]), p[t] = window.requestAnimationFrame(e);
 }
 function N(t) {
   d("onTouchStart", () => {
@@ -226,7 +226,7 @@ function H() {
 }
 function A(t = !0) {
   const e = t ? "addEventListener" : "removeEventListener", s = (i) => {
-    i.target.closest(`[${p}]`) ? this.play() : this.pause();
+    i.target.closest(`[${u}]`) ? this.play() : this.pause();
   };
   ["touchstart", "touchmove", "touchend"].forEach((i, a) => {
     const n = [N, F, H][a];
@@ -278,8 +278,8 @@ class D {
     this.disable(), this.nodes.items = [...this.el.querySelectorAll(`[${f}]`)], g.call(this);
   }
   disable() {
-    this.stop(), j.call(this), this.nodes.paging.hidden = !0, this.nodes.prev.hidden = !0, this.nodes.next.hidden = !0, this.nodes.playstop.hidden = !0, this.nodes.overflow.removeAttribute("style"), this.nodes.wrapper.removeAttribute("style"), this.nodes.items.forEach((e) => {
-      e == null || e.forEach((s) => {
+    this.stop(), j.call(this), this.nodes.paging && (this.nodes.paging.hidden = !0), this.nodes.prev && (this.nodes.prev.hidden = !0), this.nodes.next && (this.nodes.next.hidden = !0), this.nodes.playstop && (this.nodes.playstop.hidden = !0), this.nodes.overflow.removeAttribute("style"), this.nodes.wrapper.removeAttribute("style"), this.nodes.items.forEach((e) => {
+      Array.isArray(e) && e.forEach((s) => {
         s.removeAttribute("tabindex"), s.removeAttribute("aria-hidden"), s.removeAttribute("style");
       });
     }), this.el.classList.remove(c);
