@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.7](https://github.com/lordfpx/pm-carousel/compare/v0.1.6...v0.1.7) (2025-04-16)
+
 ## [0.1.6](https://github.com/lordfpx/pm-carousel/compare/v0.1.5...v0.1.6) (2025-04-16)
 
 
