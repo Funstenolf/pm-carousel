@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.9](https://github.com/lordfpx/pm-carousel/compare/v0.1.8...v0.1.9) (2025-04-24)
+
+
+### Bug Fixes
+
+* focus on first item was set on page load ([#12](https://github.com/lordfpx/pm-carousel/issues/12)) ([a1ea014](https://github.com/lordfpx/pm-carousel/commit/a1ea0146b9b212ae270d9215e3bad348b438c843))
+
 ## [0.1.8](https://github.com/lordfpx/pm-carousel/compare/v0.1.7...v0.1.8) (2025-04-24)
 
 
