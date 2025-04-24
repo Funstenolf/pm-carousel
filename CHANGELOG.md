@@ -13,11 +13,10 @@ All notable changes to this project will be documented in this file. See [commit
 
 ## [0.1.6](https://github.com/lordfpx/pm-carousel/compare/v0.1.5...v0.1.6) (2025-04-16)
 
-
 ### Bug Fixes
 
-* **disable-no-init:** correct bug occurring if carousel not initialized ([#9](https://github.com/lordfpx/pm-carousel/issues/9)) ([a60e416](https://github.com/lordfpx/pm-carousel/commit/a60e4163e5a1c60d1d19c086701385e17fcb17d3))
-* **pm-carousel-disable:** add conditions inside disable method ([#8](https://github.com/lordfpx/pm-carousel/issues/8)) ([f603dcb](https://github.com/lordfpx/pm-carousel/commit/f603dcb71b9a0e296c9b12d86b26aef459e37ae1))
+- **disable-no-init:** correct bug occurring if carousel not initialized ([#9](https://github.com/lordfpx/pm-carousel/issues/9)) ([a60e416](https://github.com/lordfpx/pm-carousel/commit/a60e4163e5a1c60d1d19c086701385e17fcb17d3))
+- **pm-carousel-disable:** add conditions inside disable method ([#8](https://github.com/lordfpx/pm-carousel/issues/8)) ([f603dcb](https://github.com/lordfpx/pm-carousel/commit/f603dcb71b9a0e296c9b12d86b26aef459e37ae1))
 
 ## [0.1.5](https://github.com/lordfpx/pm-carousel/compare/v0.1.4...v0.1.5) (2024-10-22)
 
