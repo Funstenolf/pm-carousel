@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.8](https://github.com/lordfpx/pm-carousel/compare/v0.1.7...v0.1.8) (2025-04-24)
+
+
+### Features
+
+* **disable-auto:** add a new auto mode for disable ([#10](https://github.com/lordfpx/pm-carousel/issues/10)) ([036d1be](https://github.com/lordfpx/pm-carousel/commit/036d1bec6d5e1ad43202e6abd5e5f622b6df97ac))
+
 ## [0.1.7](https://github.com/lordfpx/pm-carousel/compare/v0.1.6...v0.1.7) (2025-04-16)
 
 ## [0.1.6](https://github.com/lordfpx/pm-carousel/compare/v0.1.5...v0.1.6) (2025-04-16)
